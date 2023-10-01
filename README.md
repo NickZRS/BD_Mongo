@@ -7,3 +7,4 @@
 
 ## Integrantes
 1. Guilherme Kazuo Iamamoto
+2. Nicolas Oliveira Ribeiro Dos Santos

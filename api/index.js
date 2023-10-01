@@ -7,10 +7,9 @@ import rotasAgendaEvento from './routes/agendaEvento.js'
 app.use(express.urlencoded({ extended: true}))
 
 app.use(express.json()) 
-
 app.use('/', express.static('public'))
 
-app.use('/api/AgendaEventos', rotasagendaEvento)
+app.use('/api/agendaEventos', rotasAgendaEvento)
 
 app.get('/api', (req, res) => {
     res.status(200).json({
