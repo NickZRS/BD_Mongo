@@ -1,0 +1,15 @@
+use('Projeto1_Mongo')
+db.agendaEventos.drop()
+const agendaEventos = [
+    {   
+        "titulo" : "Conferência de Tecnologia",
+        "data" : "10-07-2023",
+        "local" : "Conferência de Tecnologia",
+        "descricao" : "Conferência de Tecnologia",
+        "participantes" : "Conferência de Tecnologia",
+        "custo" : "100.00"
+    }
+    
+]
+
+db.agendaEventos.insertMany(agendaEventos)

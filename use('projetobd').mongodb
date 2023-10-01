@@ -1,0 +1,14 @@
+use('projetobd')
+
+db.cinema.insertOne({
+    titulo: "O Poderoso Chefão",
+    diretor: "Francis Ford Coppola",
+    ano_lancamento: 1972,
+    avaliacao_imdb: 9.2,
+    data_lancamento: ISODate("1972-03-24"),
+    orcamento: 6000000.00
+})
+
+use('projetobd')
+
+db.cinema.find()
