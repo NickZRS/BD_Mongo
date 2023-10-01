@@ -1,1 +1,61 @@
 @baseURL = http://localhost:4000/api/agendaeventos
+
+###
+//GET - Lista todos os registros
+GET {{baseURL}}
+Content-Type: application/json/
+
+###
+//GET - lista um registro pelo Id
+GET {{baseURL}}/id/
+Content-Type: application/json/
+
+###
+//GET - Um registro de preços entre 100 a 900 e ocorre em 2023
+GET {{baseURL}}/precos
+Content-Type: application/json
+
+###
+//GET - Um registro pelo titulo
+GET {{baseURL}}/titulo/
+Content-Type: application/json
+
+###
+// DELETE - Apaga um registro pelo id
+DELETE {{baseURL}}/
+Content-Type: application/json
+
+###
+//POST - Insere um novo registro
+POST {{baseURL}}
+Content-Type: application/json
+
+{
+        "titulo" : "Show do RHCP",
+        "n_registro": "12345678",
+        "data" : "24-02-2023",
+        "local" : "Estádio Alianz",
+        "tipo" : "Show",
+        "descricao" : "Música",
+        "participantes" : "Chico Buarque",
+        "custo" : 600
+}
+
+###
+//PUT - Altera um registro
+
+
+PUT {{baseURL}}
+Content-Type: application/json
+
+{
+        "_id": "651996e5b731a30991318e40",
+    "titulo": "Conferência de Tecnologia",
+    "n_registro": "10027328",
+    "data": "10-07-2023",
+    "tipo": "Conferência",
+    "local": "Conferência de Tecnologia",
+    "descricao": "Conferência de Tecnologia",
+    "participantes": "Conferência de Tecnologia",
+    "custo": 50
+}

@@ -1,15 +1,16 @@
 use('Projeto1_Mongo')
-db.agendaEventos.drop()
-const agendaEventos = [
+db.agendaEventos.insertOne(
     {   
         "titulo" : "Conferência de Tecnologia",
+        "n_registro": "10027328",
         "data" : "10-07-2023",
+        "tipo" : "Conferência",
         "local" : "Conferência de Tecnologia",
         "descricao" : "Conferência de Tecnologia",
         "participantes" : "Conferência de Tecnologia",
-        "custo" : "100.00"
+        "custo" : 100
     }
+)
     
-]
 
-db.agendaEventos.insertMany(agendaEventos)
+
